@@ -1,0 +1,747 @@
+body {
+  background-color: @color-swatch1;
+  background-image:image('/images/texture-background.png');
+  border: ridge 10px;
+  border-color: @font-swatch2-color;
+  font-family:@font-swatch5-font-family;
+  margin: 10px;
+  padding: 0;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 5%;
+}
+
+
+a {
+  font-family:@font-swatch5-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight: @font-swatch5-font-weight;
+  line-height:@font-swatch5-line-height;
+  color:@color-swatch3;
+  letter-spacing: @font-swatch5-letter-spacing;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0 0 10px;
+}
+
+h1 {
+  font-family:@font-swatch1-font-family;
+  font-weight: @font-swatch1-font-weight;
+  color:@font-swatch4-color;
+  line-height:@font-swatch1-line-height;
+  letter-spacing: @font-swatch1-letter-spacing;
+  font-size: @font-swatch1-font-size;
+}
+
+h2
+{
+  font-family:@font-swatch2-font-family;
+  font-size: @font-swatch2-font-size;
+  font-weight: @font-swatch2-font-weight;
+  line-height:@font-swatch2-line-height;
+  color: @font-swatch2-color;
+  letter-spacing: @font-swatch2-letter-spacing;
+}
+
+h3
+{
+  font-family:@font-swatch3-font-family;
+  font-size:@font-swatch3-font-size;
+  font-weight: @font-swatch3-font-weight;
+  color: @font-swatch3-color;
+  line-height:@font-swatch3-line-height;
+  letter-spacing: @font-swatch3-letter-spacing;
+}
+
+h4
+{
+  font-family:@font-swatch4-font-family;
+  font-size:@font-swatch4-font-size;
+  font-weight:@font-swatch4-font-weight;
+  line-height:@font-swatch4-line-height;
+  color:@font-swatch4-color;
+  letter-spacing: @font-swatch4-letter-spacing;
+}
+
+p
+{
+  font-family:@font-swatch5-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight: @font-swatch5-font-weight;
+  line-height:@font-swatch5-line-height;
+  color:@font-swatch5-color;
+  letter-spacing: @font-swatch5-letter-spacing;
+}
+
+ol, li, ul {
+  font-family:@font-swatch5-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight:@font-swatch5-font-weight;
+  line-height:@font-swatch5-line-height;
+  color:@font-swatch5-color;
+}
+
+
+/* ===============================
+   VARIABLE MEDIA QUERIES
+   =============================== */
+
+
+@tablet: ~"only screen and (max-width: 768px)";
+@mobile: ~"only screen and (max-width: 320px)";
+
+
+/* ===============================
+   CUSTOM CSS
+   =============================== */
+
+
+
+body.edit .widget.navigation, body.edit .widget.extendednavigation {
+ overflow: visible;
+}
+
+
+/* ===============================
+   HEADER
+   =============================== */
+
+header {
+
+ @media @tablet {
+        border-top: 0;
+        border-bottom: 0;
+        padding-top: 0;
+    }
+
+    .companyheader {
+        display: block;
+        padding: 30px 0 0 0;
+        @media @tablet { 
+            padding: 30px 0 60px;
+        }
+
+    .widget.content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .subheader {
+        color: red;
+    }
+    
+       .widget.logo {
+          width: 100%;
+          text-align: center;
+        }
+
+
+
+        .widget.companyname {
+            color: @color-swatch7;
+            width: 30%;
+            position: relative;
+            text-align: center;
+            padding: 0.6em;
+            margin: 0.8em auto 1.5em;
+            @media @tablet {
+            margin: 0 auto 2em;
+            width: 40%;
+            }
+            @media @mobile { 
+            width: 80%;
+            padding: 0.8em; 
+            }
+
+            a {
+                font-family:@font-swatch10-font-family;
+                font-weight: @font-swatch10-font-weight;
+                color:@font-swatch10-color;
+                line-height:@font-swatch10-line-height;
+                letter-spacing: @font-swatch10-letter-spacing;
+                font-size: @font-swatch10-font-size;
+                padding: 10px 8px 8px;
+                @media @tablet { 
+                    font-size: bkscale(@font-swatch10-font-size, 0.9);
+                    line-height:bkscale(@font-swatch10-line-height,0.9);
+                }
+
+                @media @mobile { 
+                    font-size: bkscale(@font-swatch10-font-size, 0.8);
+                    line-height:bkscale(@font-swatch10-line-height,0.8);
+                }
+                &:hover {
+                      text-decoration: none;
+                    }
+            } /* end a */
+
+       } /* end companyname */
+
+    } /* end company header */
+
+} /* end header */
+
+
+/* ===============================
+   MENU SECTIONS NAVIGATION
+   =============================== */
+
+.widget.menusections {
+    text-align: center;
+    text-transform: uppercase;
+    padding:20px 0 0px 0;
+    min-height: 30px;
+    @media @tablet {
+        
+    }
+    ul {
+        display: inline-block;
+        list-style: none;
+        margin: 0px;
+        padding: 0;
+        @media @tablet {
+            /* Hidden until nav icon is clicked */
+            display: none;
+            /* Then these styles are applied */
+            width: 100%;
+        }
+
+        /* ALIGN CENTER */
+        &.align-center {
+            li {
+                text-align: center;
+                &:hover {
+                    li {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        /* ALIGN LEFT */
+        &.align-left {
+            li {
+                text-align: left;
+                &:hover {
+                    li {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        /* ALIGN RIGHT */
+        &.align-right {
+            li {
+                text-align: right;
+                &:hover {
+                    li {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+        li {
+            padding: 0 12px;
+            float: left;
+            display: block;
+            padding-right: 15px;
+            @media @tablet {
+                    width: 100%;
+                    padding: 1em 0;
+                    
+            }
+
+            a {
+                display: block;
+                font-family:@font-swatch6-font-family;
+                font-size:@font-swatch6-font-size;
+                font-weight: @font-swatch6-font-weight;
+                color: @font-swatch6-color;
+                line-height:@font-swatch6-line-height;
+                letter-spacing: @font-swatch6-letter-spacing;
+                &:hover {
+                    color: @font-swatch6-color-hover;
+                    text-decoration: none;
+                }
+                &:after {
+                    content: "●";
+                    font-size: 0.8em;
+                    padding-left: 8px;
+                    position: absolute;
+                    bottom: 0.4em;
+                    color: @color-swatch5;
+                    @media @tablet {
+                        display: none;
+                    }
+                }
+            }
+            &:last-child a:after {
+                content: "";
+            }
+        }
+    }
+    a {
+            &.menu-pull {
+                display: none;
+                @media @tablet {
+                    display: block;
+                    width: 100%;
+                    position: absolute;
+                    top: 1px;
+                    &:after {
+                        content:"";
+                        background: image('/images/nav-icon.png') no-repeat;
+                        background-position: center;
+                        width: 50px;
+                        height: 50px;
+                        top: -28px;
+                        left: 50%;
+                        margin-left:-25px;
+                        background-color: @color-swatch5;
+                        display: inline-block;
+                        position: absolute;
+                        border: none;
+                        -webkit-border-radius: 100px;
+                        -moz-border-radius: 100px;
+                        border-radius: 100px;
+                    }
+                }
+            }
+        }
+}
+
+
+/* ===============================
+   MENU
+   =============================== */
+
+.widget.menu {
+    margin-top: 90px;
+        @media @tablet {
+        margin-top: 0;
+        }
+    .main {
+        padding: 0;
+        margin-bottom: 40px;
+        
+            @media @tablet {
+                padding: 10px 0;
+                border: none;
+            }
+
+            ol, li { /* removes list-style on sections and items */
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            } 
+
+            .menu-sections {
+                margin-top: 2em;
+            }
+
+        /* SECTION AND SUB-SECTION HEADERS */
+
+            .menu-header, .menu-section-header {
+                margin-bottom: 2em;
+                text-align: center;
+
+                h1 { 
+                    color: @color-swatch7;
+                    width: 55%;
+                    position: relative;
+                    background-color: @color-swatch3;
+                    text-align: center;
+                    padding: 0.5em;
+                    margin: -3.7em auto 2em;
+                    @media @tablet {
+                    margin: 0 auto 2em;
+                    width: 40%;
+                    }
+                    @media @mobile { 
+                    width: 80%;
+                    }
+                    &:before, &:after {
+                         content: "";
+                         position: absolute;
+                         display: block;
+                         border: 1.3em solid @color-swatch3;
+                         border-top-color: transparent;
+                         border-bottom-color: transparent;
+                         bottom: 0;
+                            }
+                    &:before {
+                        left: -2.62em;
+                        border-left-color: transparent;
+                        z-index: 2;
+
+                        }
+                    &:after {
+                        right: -2.62em;
+                        border-right-color: transparent;
+                        z-index: 2;
+                        }     
+                } /*end menu-name-background */
+
+                h2 {    
+                        color: @color-swatch7;
+                        width: 50%;
+                        position: relative;
+                        background-color: darken(@color-swatch1,10%);
+                        text-align: center;
+                        padding: 0.5em; 
+                        margin: 2em auto 2em;
+                        @media @tablet {
+                        margin: 0 auto 2em;
+                        width: 50%;
+                        }
+                        @media @mobile { 
+                        width: 80%;
+                        }
+                        &:before, &:after {
+                            content: "";
+                            position: absolute;
+                            display: block;
+                            bottom: -0.4em;
+                            border: 1.2em solid darken(@color-swatch1,15%);
+                        }
+                        &:before {
+                            left: -1.6em;
+                            border-right-width: 0.4em;
+                            border-left-color: transparent;
+                        }
+                        &:after {
+                            right: -1.65em;
+                            border-left-width: 0.4em;
+                            border-right-color: transparent;
+                        }
+                } /*end h2 */
+
+                p { /* menu-availability, menu-description and menu-section-description */
+                      font-family:@font-swatch2-font-family;
+                      font-weight: @font-swatch2-font-weight;
+                      color:@font-swatch4-color;
+                      line-height:@font-swatch2-line-height;
+                      letter-spacing: @font-swatch2-letter-spacing;
+                      font-size: @font-swatch3-font-size;
+                }
+
+            } /*end menu-header and menu-section-header */
+
+
+        /* ITEMS */
+
+            .menu-items {
+                padding: 30px;
+                -moz-column-count: 3;
+                -moz-column-gap: 50px;
+                -moz-column-rule-color: lighten(@color-swatch7,80%);
+                -moz-column-rule-style:  solid;
+                -moz-column-rule-width:  1px;
+
+                -webkit-column-count: 3;
+                -webkit-column-gap : 50px;
+                -webkit-column-rule-color:  lighten(@color-swatch2,40%);
+                -webkit-column-rule-style: solid ;
+                -webkit-column-rule-width:  1px;
+
+                @media @tablet {
+                    padding:0;
+                }
+
+                @media only screen and (max-width: 600px) {
+                    -moz-column-count: 1;
+                    -moz-column-gap: 50px;
+                    -webkit-column-count: 1;
+                    -webkit-column-gap : 50px;
+                }
+
+                
+                li { /* menu-item and menu-section-item */
+                    position: relative;
+                    display: block;
+                    padding-bottom: 2em;
+                    @media @mobile { 
+                        margin-bottom: 1.5em;
+                        padding-bottom: 1.5em;
+                    }
+                    &.menu-item-promoted {
+                            background-color: lighten(@color-swatch1,80%);
+                            padding: 1.5em 2em;
+                            margin-bottom: 2.5em;
+                            border: none;
+                            -webkit-border-radius: 5px;
+                            -moz-border-radius: 5px;
+                            border-radius: 5px;
+                            h3 {
+                                width: auto;
+                            }
+                            &:after {
+                                content: image('/images/promo.png') no-repeat;
+                                font-size: 2em;
+                                position: absolute;
+                                top: -1.7%;
+                                display: block;
+                                z-index: 9999999;
+                                right: 0%;
+                                color: @color-swatch3;
+                            }
+                    }/* end menu-item-promoted */
+
+                    .inner-item {
+                        display: inline-block;
+
+                        h3 { /* menu-item-name */  
+                            padding: 0 8px 0 0;
+                            float: left;
+                        }
+                        img { /* menu-item-image */
+                            display: none;
+                            border: none;
+                            -webkit-border-radius: 5px;
+                            -moz-border-radius: 5px;
+                            border-radius: 5px;
+                            width: 100%;
+                            margin: 15px 0;
+                        }
+                        .menu-item-price p {   /* standard-price */
+                            font-family:@font-swatch8-font-family;
+                            font-size:@font-swatch8-font-size;
+                            font-weight: @font-swatch8-font-weight;
+                            line-height:@font-swatch8-line-height;
+                            color: lighten(@color-swatch1,8%);
+                            letter-spacing: @font-swatch8-letter-spacing;
+                            float: left;
+                            padding-bottom: 20px;
+                            margin: 0;
+                            width: 100%;
+                            display: inline-block;
+                        }
+                        p { /* item-description */
+                            font-family:@font-swatch5-font-family;
+                            font-size: 14px;
+                            font-weight: @font-swatch5-font-weight;
+                            line-height:@font-swatch5-line-height;
+                            color:@font-swatch5-color;
+                            letter-spacing: @font-swatch5-letter-spacing;
+                            float: left;
+                            width: 100%;
+                            margin: 0 0 0.5em 0;
+                            padding: 0;
+                        }
+                        h4  { /* nutritional-title for section and subsection */
+                            font-family:@font-swatch5-font-family;
+                            
+                            font-size:@font-swatch5-font-size;
+                            font-weight: @font-swatch5-font-weight;
+                            line-height:@font-swatch5-line-height;
+                            color: @color-swatch1;
+                            letter-spacing: @font-swatch5-letter-spacing;
+                            float: left;
+                            width: 100%;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        .menu-item-nutritional-prop { 
+                            font-size:@font-swatch5-font-size;
+                            font-weight: @font-swatch5-font-weight;
+                            line-height:@font-swatch5-line-height;
+                            color: @font-swatch5-color;
+                            float: left;
+                            width: 100%;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        .menu-section-item-dietary-props {
+                            float: left;
+                            width: 100%;
+                            margin-top: 5px;
+                            padding: 0;
+                            .dietary-icon {
+                                background-color: lighten(@color-swatch6,10%);
+                                width: 25px;
+                                height: 25px;
+                                border: 0;
+                                -webkit-border-radius: 100px;
+                                -moz-border-radius: 100px;
+                                border-radius: 100px;
+                                background-repeat: no-repeat;
+                                background-size: 19px;
+                                background-position: center;
+                                display: inline-block;
+                            }
+                            .vegetarian-icon {
+                                background-image: image('/images/veggie-icon.png');
+                            }
+                            .glutenFree-icon {
+                                background-image: image('/images/gf-icon.png');
+                              }
+                            .nutFree-icon {
+                                background-image: image('/images/nutsFree.png');
+                              }
+                            .dairyFree-icon {
+                                background-image: image('/images/dairy-icon.png');
+                              }
+                        } /* end menu-section-item-dietary-props */                        
+
+                        .menu-item-description, .menu-section-item-description {
+                            margin-bottom: 0.5em;
+                        }
+
+                    } /* end inner-item */
+
+                } /* end li */
+
+            } /* end ol */  
+
+            .menu-info {
+                display: inline-block;
+                text-align: center;
+                margin: 2em;
+                padding: 1em;
+                background-color: rgba(255, 255, 255, 0.3);
+                border: none;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+
+                p { /* menu-note */
+                  float: left;
+                  width: 100%;
+                  padding: 0;
+                }
+
+                dl { /* menu-dietary-key */
+                  float: left;
+                  width: 100%;
+                  margin: 5px 0;
+                    dt, dd {
+                        display: inline-block;
+                    }
+                    dt { /* dietary-icon */
+                        vertical-align: top; 
+                        background-color: lighten(@color-swatch6,10%);
+                        width: 25px;
+                        height: 25px;
+                        border: 0;
+                        -webkit-border-radius: 100px;
+                        -moz-border-radius: 100px;
+                        border-radius: 100px;
+                        background-repeat: no-repeat;
+                        background-size: 13px;
+                        background-position: center;
+                    }
+                    .vegetarian-icon {
+                        background-image: image('/images/veggie.png');
+                    }
+
+                    .glutenFree-icon {
+                        background-image: image('/images/nuts.png');
+                    }
+                    dd { /* text for icon */
+                        font-family:@font-swatch5-font-family;
+                        font-size:@font-swatch5-font-size;
+                        font-weight: @font-swatch5-font-weight;
+                        line-height:@font-swatch5-line-height;
+                        color: @font-swatch5-color;
+                        letter-spacing: @font-swatch5-letter-spacing;
+                        margin: 0 5px -7px;
+                    } /* end dd */
+                 
+
+                } /* end dl */
+
+        } /* end menu-info */
+
+    } /* end main */
+
+} /* end .widget.menu */
+
+
+/* ===============================
+   FOOTER
+  =============================== */
+
+footer {
+  padding: 2em 0;
+  min-height: 150px;
+  background-color: @color-swatch2;
+
+    .widget.content {
+        width: 100%;
+        text-align: center;
+
+        p {
+          color: @color-swatch7;
+        }
+    }
+
+} /* end footer */
+
+/* ===============================
+  BACK TO TOP
+   =============================== */
+
+.back-to-top {
+  text-align: center;
+  height: 66px;
+
+    a {
+        background-image: image('/images/back-to-top.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 66px;
+        text-indent: -2000px;
+        display: block;
+
+    }
+
+} /*end back-to-top */
+
+
+
+/* ===============================
+   IPHONE WIDTH
+   =============================== */
+
+@media only screen and (max-width: 480px) {
+
+
+
+  /* UL ALIGN RIGHT */
+
+  .widget.extendednavigation ul.align-right li.folder {
+    background-position: 12px center;
+    padding-right: 0;
+  }
+
+
+
+}
+
+@media only screen and (min-width: 1140px) {
+  .wrapper {
+    width: 960px; /* 1140px - 10% for margins */
+    margin: 0 auto;
+  }
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+

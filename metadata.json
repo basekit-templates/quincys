@@ -1,0 +1,146 @@
+{
+    "name":"",
+    "thumbnail":"sycamore.png",
+    "screenshot":"sycamore.png",
+    "tags": {
+    "en": ["minimal", "clean", "photography", "vintage", "modern", "dark", "studio", "website", "creative", "elegant", "professional", "unique", "media", "sans-serif"],
+    "es": ["minimalista", "limpio", "fotografico", "vintage", "moderno", "oscuro", "estudio", "website", "creativo", "elegante", "profesional", "unico", "comunicacion", "sans-serif"],
+    "br": ["minimalista", "limpo", "fotografia", "vintage", "moderno", "escuro", "estúdio", "website", "criativo", "elegante", "profissional", "único", "mídia", "sans-serif"]
+    },
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#882aab",
+            "color2":"#7d7872",
+            "color3":"#211f1e",
+            "color4":"#FFFFFF",
+            "color5":"#4E4E4E",
+            "color6":"#4E4E4E",
+            "color7":"#FFFFFF"
+        },
+        "Swatch 2": {
+            "color1":"#ffffff",
+            "color2":"#72d0eb",
+            "color3":"#09d4b5",
+            "color4":"#2f353e",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        },
+        "Swatch 3": {
+            "color1":"#ffffff",
+            "color2":"#72d0eb",
+            "color3":"#f3a41c",
+            "color4":"#2f353e",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        },
+        "Swatch 4": {
+            "color1":"#ffffff",
+            "color2":"#72d0eb",
+            "color3":"#3b3b3b",
+            "color4":"#2f353e",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        },
+        "Swatch 5": {
+            "color1":"#ffffff",
+            "color2":"#72d0eb",
+            "color3":"#9553d9",
+            "color4":"#2f353e",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        }
+    },
+    "fontSwatch": {
+       "title": "Open Sans",
+        "font1": {
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
+            "font-size": "20px",
+            "font-weight": "300",
+            "line-height": "32px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
+            "font-size": "22px",
+            "font-weight": "400",
+            "line-height": "34px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
+            "font-size": "16px",
+            "font-weight": "400",
+            "line-height": "30px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
+            "font-size": "16px",
+            "font-weight": "300",
+            "line-height": "26px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
+            "font-size": "12px",
+            "font-weight": "500",
+            "line-height": "26px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
+            "font-size": "16px",
+            "font-weight": "300",
+            "line-height": "26px",
+            "color": "@color-swatch6",
+            "color-hover": "@color-swatch3",
+            "letter-spacing": "inherit",
+            "background-color": "transparent",
+            "background-color-hover": "transparent"
+        },
+        "font7": {
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
+            "font-size": "18px",
+            "font-weight": "300",
+            "line-height": "28px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "darken(@color-swatch3,5%)"
+        },
+        "font8": {
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "28px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "28px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
+            "font-size": "44px",
+            "font-weight": "300",
+            "line-height": "24px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        }
+    }
+}

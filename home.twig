@@ -1,0 +1,29 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<a name="top"></a>
+
+<header>
+    <div class="wrapper clearfix">
+        <div class="companyheader clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "QUINCYS"})|raw}}
+            {{widget('content', 'subheader', {content: 'ALL AMERICAN COCKTAIL BAR OPEN TIL LATE', lines: 'all'})|raw}}
+        </div>
+            {{widget('menusections', 'menusections1', {})|raw}}
+    </div><!--end wrapper clearfix-->
+</header>
+
+{{widget('menu', 'menu1', {})|raw}}
+       
+
+<footer>
+    <div class="wrapper clearfix">
+         {{widget('content', 'footercolumn1content', {"content":"<p>Lorem Ipsum Dolor</p>"})|raw}}
+         <div class="back-to-top"><a href="#top">Back to top^</a></div>
+    </div>
+    
+</footer>
+
+{% endblock %}
