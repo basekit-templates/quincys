@@ -252,7 +252,7 @@ header {
             padding: 0 12px;
             float: left;
             display: block;
-            padding-right: 15px;
+            padding-right: 0px;
             @media @tablet {
                     width: 100%;
                     padding: 1em 0;
@@ -265,14 +265,22 @@ header {
                 font-size:@font-swatch6-font-size;
                 font-weight: @font-swatch6-font-weight;
                 color: @font-swatch6-color;
+                background-color: white;
                 line-height:@font-swatch6-line-height;
                 letter-spacing: @font-swatch6-letter-spacing;
+                padding: 4px 15px;
+                border: solid 1px;
+                border-color: lighten(@color-swatch1,50%);
+                border-radius: 4px;
+
                 &:hover {
-                    color: @font-swatch6-color-hover;
-                    text-decoration: none;
+                color: @font-swatch6-color-hover;
+                color: @font-swatch6-color;
+                text-decoration: none;
+                border-color: lighten(@color-swatch1,20%);
                 }
                 &:after {
-                    content: "●";
+                    content: "";
                     font-size: 0.8em;
                     padding-left: 8px;
                     position: absolute;
