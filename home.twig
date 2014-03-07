@@ -2,28 +2,32 @@
 
 {% block content %}
 
-<a name="top"></a>
+<div class="canvas">
 
-<header>
+<header class="bk-header">
     <div class="wrapper clearfix">
         <div class="companyheader clearfix">
             {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-            {{widget('companyname', 'companyname', {"business": "QUINCYS"})|raw}}
-            {{widget('content', 'subheader', {content: 'ALL AMERICAN COCKTAIL BAR OPEN TIL LATE', lines: 'all'})|raw}}
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+            {{widget('content', 'headercontent', {"content":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec eros non enim condimentum tristique. Fusce commodo lectus ac neque tristique auctor.</p>"})|raw}}
+            {{widget('extendednavigation', 'tabletnavigation', {})|raw}}
         </div>
-            {{widget('menusections', 'menusections1', {})|raw}}
     </div><!--end wrapper clearfix-->
 </header>
 
-{{widget('menu', 'menu1', {})|raw}}
-       
+<div class="main wrapper clearfix">
 
-<footer>
+{{widget('menusections', 'menusections1', {})|raw}}
+{{widget('menu', 'menu1', {})|raw}}
+</div>
+
+
+<footer class="bk-footer">
     <div class="wrapper clearfix">
-         {{widget('content', 'footercolumn1content', {"content":"<p>Lorem Ipsum Dolor</p>"})|raw}}
-         <div class="back-to-top"><a href="#top">Back to top^</a></div>
+        {{widget('content', 'footercontent', {"content":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec eros non enim condimentum tristique. Fusce commodo lectus ac neque tristique auctor.</p>"})|raw}}
     </div>
-    
 </footer>
+
+</div><!-- end canvas -->
 
 {% endblock %}
