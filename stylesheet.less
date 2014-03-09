@@ -141,7 +141,7 @@ body {
                     letter-spacing: @font-swatch6-letter-spacing;
                     &:hover {
                         color: @font-swatch6-color-hover;
-                        text-decoration: underline;
+                        text-decoration: none;
                     }
                 }
 
@@ -168,15 +168,14 @@ body {
                             display: block;
                             z-index: 9999999;
                             right: 0;
-                            color: @color-swatch6;
+                            color: fade(@color-swatch6, 80%);
                             @media @tablet {
-                                font-size: 10px;
+                                font-size: 8px;
                                 padding-right: 10px;
                             }
                         }
                         &:hover {
                             color: @font-swatch6-color-hover;
-                            text-decoration: none;
                         }
                     }
                     ul {
@@ -199,7 +198,6 @@ body {
                             }
                         }
                     }
-
                 }
             }
         }
@@ -439,7 +437,7 @@ body {
                 }
                 @media @tablet {
                     width: 100%;
-                    border-bottom: 1px dotted fade(@color-swatch3, 50%);
+                    border-bottom: 1px dotted fade(@color-swatch5, 50%);
                     padding: 15px 0;
                 }
                 a {
@@ -452,6 +450,7 @@ body {
                     letter-spacing: @font-swatch6-letter-spacing;
                     &:hover {
                         color: darken(@color-swatch7, 10%);
+                        text-decoration: none;
                         @media @tablet {
                             color: @color-swatch3;
                         }

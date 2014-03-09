@@ -10,7 +10,9 @@
             {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
             {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
             {{widget('content', 'headercontent', {"content":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec eros non enim condimentum tristique. Fusce commodo lectus ac neque tristique auctor.</p>"})|raw}}
-            {{widget('extendednavigation', 'tabletnavigation', {})|raw}}
+            {% if pages|length > 1 %}
+                {{widget('extendednavigation', 'tabletnavigation', {})|raw}}
+            {% endif %}
         </div>
     </div><!--end wrapper clearfix-->
 </header>
