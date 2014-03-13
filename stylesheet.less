@@ -990,3 +990,69 @@ hr {
         }
     }
 }
+
+/* ===============================
+   9. Print override
+   =============================== */
+.print-mixin {
+    .headerrow,
+    .bk-footer,
+    .bk-header .widget.profile  {
+        display:none;
+    }
+    .companyheader {
+        padding:0px;
+    }
+    .menu-container {
+        display:none;
+    }
+    .menu-info {
+        margin:0px;
+    }
+    .widget.menu .main.wrapper {
+        page-break-before:always;
+    }
+    .widget.menu .menu-item-image-wrap {
+        height:150px;
+    }
+    .widget.menu .main .menu-items li.menu-item-promoted, .widget.menu .main .menu-subsection .menu-subsection-promoted {
+        border:1px solid #000000!important;
+        padding:20px;
+        margin-right:1px;
+    }
+    .companyheader {
+      margin-top:0;
+    }
+    .menu-header, .menu-section-header {
+      padding-bottom:0;
+      margin-bottom:0;
+    }
+    header.bk-header {
+      margin-top: 0;
+      padding: 2em 0em;
+    }
+    .widget.menu .menu-section-item-dietary-props .dietary-icon, .widget.menu .menu-info .dietary-icon {
+      width: 70px;
+      height: 28px;
+      border: 1px solid #000000!important;
+  }
+  .widget.content .bk-content-text {
+    margin: 0px auto;
+    display: table;
+  }
+  .menu-subsection-header {
+    text-align:center;
+  }
+  .menu-subsection-wrapper.menu-subsection-promoted {
+    padding:10px;
+  }
+}
+
+
+@media print {
+    .print-mixin;
+}
+
+.bk-print {
+    .print-mixin;
+}
